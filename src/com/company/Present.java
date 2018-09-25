@@ -26,14 +26,16 @@ public class Present {
         lollipop.setPriseGram(PriceSweets.priceGram(lollipop.getPrice(), weight));
 
         scanner.close();
+        double totalWeight = chocolates.getWeight()+ jellybean.getWeight()+ lollipop.getWeight();
+        double totalCost = chocolates.getPriseGram()+jellybean.getPriseGram()+lollipop.getPriseGram();
 
-        System.out.println("Общий вес:" + PriceSweets.totalWeight);
-        System.out.println("Общая цена:" + PriceSweets.totalCost);
+        System.out.println("Общий вес:" + totalWeight);
+        System.out.println("Общая цена:" + totalCost);
 
         System.out.println("Информация по позициям");
-        System.out.println(chocolates.getName() + ": " + chocolates.getPriseGram() + " руб. - стоимость за " + chocolates.getWeight() + " г, цена за кг" + chocolates.getPrice() + " руб.");
-        System.out.println(jellybean.getName() + ": " + jellybean.getPriseGram() + " руб. - стоимость за " + jellybean.getWeight() + " г , цена за кг" + jellybean.getPrice() + " руб.");
-        System.out.println(lollipop.getName() + ": " + lollipop.getPriseGram() + " руб. - стоимость за " + lollipop.getWeight() + " г , цена за кг" + lollipop.getPrice() + " руб.");
+        System.out.println(chocolates.getName() + ": " + chocolates.getPriseGram() + " руб. - стоимость за " + chocolates.getWeight() + " г, " + chocolates.getPrice() + " руб. цена за кг");
+        System.out.println(jellybean.getName() + ": " + jellybean.getPriseGram() + " руб. - стоимость за " + jellybean.getWeight() + " г, " + jellybean.getPrice() + " руб. цена за кг");
+        System.out.println(lollipop.getName() + ": " + lollipop.getPriseGram() + " руб. - стоимость за " + lollipop.getWeight() + " г, " + lollipop.getPrice() + " руб. цена за кг");
 
 
     }
