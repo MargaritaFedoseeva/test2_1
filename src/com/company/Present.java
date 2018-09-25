@@ -10,17 +10,20 @@ public class Present {
         System.out.print("Шоколадные:");
         Chocolates chocolates = new Chocolates();
         int weight = scanner.nextInt();
-        PriceSweets.priceGram(chocolates.getPrice(), weight);
+        chocolates.setWeight(weight);
+        chocolates.setPriseGram(PriceSweets.priceGram(chocolates.getPrice(), weight));
 
         System.out.print("Жевательные:");
         Jellybean jellybean = new Jellybean();
         weight = scanner.nextInt();
-        PriceSweets.priceGram(jellybean.getPrice(), weight);
+        jellybean.setWeight(weight);
+        jellybean.setPriseGram(PriceSweets.priceGram(jellybean.getPrice(), weight));
 
         System.out.print("Леденцы:");
         Lollipop lollipop = new Lollipop();
         weight = scanner.nextInt();
-        PriceSweets.priceGram(lollipop.getPrice(), weight);
+        lollipop.setWeight(weight);
+        lollipop.setPriseGram(PriceSweets.priceGram(lollipop.getPrice(), weight));
 
         scanner.close();
 
@@ -28,9 +31,9 @@ public class Present {
         System.out.println("Общая цена:" + PriceSweets.totalCost);
 
         System.out.println("Информация по позициям");
-        System.out.println(chocolates.getName() + ": стоимость " + chocolates.getPrice() +", вес за ");
-        System.out.println(jellybean.getName() + ": стоимость " + jellybean.getPrice());
-        System.out.println(lollipop.getName() + ": стоимость " + lollipop.getPrice());
+        System.out.println(chocolates.getName() + ": " + chocolates.getPriseGram() + " руб. - стоимость за " + chocolates.getWeight() + " г, цена за кг" + chocolates.getPrice() + " руб.");
+        System.out.println(jellybean.getName() + ": " + jellybean.getPriseGram() + " руб. - стоимость за " + jellybean.getWeight() + " г , цена за кг" + jellybean.getPrice() + " руб.");
+        System.out.println(lollipop.getName() + ": " + lollipop.getPriseGram() + " руб. - стоимость за " + lollipop.getWeight() + " г , цена за кг" + lollipop.getPrice() + " руб.");
 
 
     }
