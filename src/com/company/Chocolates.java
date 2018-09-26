@@ -25,7 +25,7 @@ public class Chocolates {
     }
 
     public void setWeight(double weight) {
-        this.weight=weight;
+        this.weight+=weight;
     }
 
     public double getPriseGram() {
@@ -33,6 +33,6 @@ public class Chocolates {
     }
 
     public void setPriseGram(double priseGram) {
-        this.priseGram=priseGram;
+        this.priseGram+=priseGram;
     }
 }

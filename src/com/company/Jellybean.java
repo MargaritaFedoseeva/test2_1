@@ -27,7 +27,7 @@ public class Jellybean {
     }
 
     public void setWeight(double weight) {
-        this.weight = weight;
+        this.weight += weight;
     }
 
     public double getPriseGram() {
@@ -35,6 +35,6 @@ public class Jellybean {
     }
 
     public void setPriseGram(double priseGram) {
-        this.priseGram = priseGram;
+        this.priseGram += priseGram;
     }
 }
