@@ -22,6 +22,7 @@ public class MyClass {
         Integer[] intArray = {10, 20, 30, 40, 50};
         Double[] doubleArray = {10.1, 10.2, 30.1, 30.2, 21.001};
         Character[] charArray = {'J', 'A', 'V', 'A', 'T', 'P', 'O', 'I', 'N', 'T'};
+        String[] stringArray = {"Наташа", "Женя", "Лера", "Глеб", "Галя"};
         System.out.println("Printing Integer Array");
         printArray(intArray);
         maxElementInArray(intArray);
@@ -31,5 +32,8 @@ public class MyClass {
         System.out.println("Printing Character Array");
         printArray(charArray);
         maxElementInArray(charArray);
+        System.out.println("Printing String Array");
+        printArray(stringArray);
+        maxElementInArray(stringArray);
     }
 }
